@@ -17,3 +17,6 @@ Output: Generates a standardized coordinate table for genome-wide mapping.
 ### Step 3: Genomic Landscape Visualization (2.plot1_cytoband_with_degSTAR.r)
 Figure 3q: Displays the complete genomic distribution of the 8 causal genes across human chromosomes 1–22.  
 Visual Mapping: Integrates cytoband ideograms (using hg19_cytoBand.txt), SNP markers , cell-type associations (dots), and ketamine-rescued DEG  (stars) .
+## 3. Requirements
+Language: R (v4.3.2)  
+Key Packages: TwoSampleMR (v0.5.6), Seurat (v3.1.4), Gviz.
