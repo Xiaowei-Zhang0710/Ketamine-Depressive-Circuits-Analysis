@@ -12,5 +12,5 @@ Gviz Plotting: Visualizes specific risk loci  relative to gene structures using 
 ### Step 2: Result Aggregation and Leading SNP Identification (2.plot0.get_cytoband_full.r) 
 Purpose: To serve as a bridge between MR statistical results and spatial visualization.   
 Core Logic: Aggregates multi-omics causal results across cell types. It identifies a leading SNP for each causal target gene.   
-Prioritization Logic: Identifies the most representative leading SNP by prioritizing the SNP with the lowest $P$-value from the GWAS results; if none is available, defaults to the SNP with the lowest $P$-value from the exposure eQTLs.   
+Priority Logic Logic: Identifies the most representative leading SNP by prioritizing the SNP with the lowest $P$-value from the GWAS results; if none is available, defaults to the SNP with the lowest $P$-value from the exposure eQTLs.   
 Output: Generates a standardized coordinate table for genome-wide mapping.
