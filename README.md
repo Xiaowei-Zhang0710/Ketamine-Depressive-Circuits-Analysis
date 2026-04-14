@@ -6,3 +6,6 @@ This project integrates human brain cell-type-specific eQTL data with mouse sing
 ### Step 0: Genomic Coordinate Alignment (0.eqtl_tob37.r)
 Function: Converts human eQTL association data from hg38 to the b37 (GRCh37) system to match MDD GWAS statistics.  
 Logic: Implements "sign flipping" for beta values to maintain effect direction relative to the dbSNP (v153) reference.
+### Step 1: Causal Inference & Local Mapping (1.run.smr_all_process.r)
+Two-Sample MR: Uses the TwoSampleMR package ($P \le 10^{-5}$, $r^2 < 0.01$) to evaluate the causality of mouse DEGs in human MDD risk.  
+Gviz Plotting: Visualizes specific risk loci  relative to gene structures using biomaRt.
